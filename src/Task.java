@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-class Task implements Complexity, Priority, Comparable {
+class Task implements Priority, Complexity, Comparable {
 
     // set up variables
     private String task;
-    private int complexityLevel;
     private int priorityLevel;
+    private int complexityLevel;
 
     // set up constructor with default complexity and priority
     public Task(String inTask) {
         this.task = inTask;
-        this.complexityLevel = 1;
         this.priorityLevel = 3;
+        this.complexityLevel = 1;
     }
 
     // set priority level
@@ -65,7 +65,7 @@ class Task implements Complexity, Priority, Comparable {
 
     // returns output of task
     public String toString() {
-        return "Task Name: " + this.getTask() + "\nComplexity: " + this.getComplexity() + "\nPriority: " + this.getPriority() + "\n\n";
+        return "Task Name: " + this.getTask() + "\nPriority: " + this.getPriority() + "\nComplexity: " + this.getComplexity() + "\n\n";
     }
 }
 
